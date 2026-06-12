@@ -64,8 +64,11 @@ p, label, div {
 
 /* ── Sidebar ── */
 [data-testid="stSidebar"] {
-    background-color: #267d8d;
-    border-right: 1px solid #2e3148;
+    background: linear-gradient(
+        180deg,
+        #1e3a5f,
+        #0f172a
+    );
 }
 
 [data-testid="stSidebar"] * {
