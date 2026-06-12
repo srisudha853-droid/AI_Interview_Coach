@@ -1,0 +1,101 @@
+/* ── TITLES — change #7c83f5 to any colour you want ── */
+/* Only the first title on the page */
+h1:first-of-type {
+    color: #bad4e4 !important;
+    font-size: 4rem !important;
+    font-weight: 800 !important;
+    text-align: center;
+}
+/* ── SUBTITLES — change #a0d4f5 to any colour you want ── */
+h2, h3 {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+/* ── Body text ── */
+p, label, div {
+    color: #c8cad8;
+}
+
+/* ── Input fields ── */
+[data-testid="stTextInput"] input,
+[data-testid="stTextArea"] textarea {
+    background-color: #1e2130 !important;
+    color: #e8eaf0 !important;
+    border: 1px solid #3a3f5c !important;
+    border-radius: 8px !important;
+}
+
+[data-testid="stSelectbox"] > div {
+    background-color: #97c9e9 !important;
+    border: 1px solid #3a3f5c !important;
+    border-radius: 8px !important;
+    color: #06070a !important;
+}
+
+/* ── Buttons ── */
+[data-testid="stButton"] > button {
+    background: linear-gradient(135deg, #21acb4, #0c444e);
+    color: rgb(13, 2, 66) !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 0.5rem 1.5rem !important;
+    font-weight: 600 !important;
+    transition: opacity 0.2s;
+}
+
+[data-testid="stButton"] > button:hover {
+    opacity: 0.88;
+}
+
+/* ── Feedback box ── */
+.feedback-box {
+    background-color: #1a1d2e;
+    border: 1px solid #3a3f5c;
+    border-left: 4px solid #7c83f5;
+    border-radius: 10px;
+    padding: 1.2rem 1.5rem;
+    margin-top: 1rem;
+    white-space: pre-wrap;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #dde0f0;
+}
+
+/* ── Sidebar ── */
+[data-testid="stSidebar"] {
+    background-color: #267d8d;
+    border-right: 1px solid #2e3148;
+}
+
+[data-testid="stSidebar"] * {
+    color: #030c4a !important;
+}
+/* Dashboard title size */
+[data-testid="stSidebar"] h1 {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    text-align: center;
+}
+
+/* ── Metric values ── */
+[data-testid="stMetricValue"] {
+    color: #7cf1f5 !important;
+    font-size: 1.8rem !important;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #8b8fa8 !important;
+}
+
+/* ── Divider ── */
+hr {
+    border-color: #2e3148 !important;
+}
+
+/* ── Alerts ── */
+[data-testid="stAlert"] {
+    background-color: #f01414 !important;
+    border: 1px solid #3a3f5c !important;
+    color: #081155 !important;
+}
