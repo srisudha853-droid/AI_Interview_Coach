@@ -137,13 +137,17 @@ Question: {question}
 Candidate's Answer: {answer}
 
 Score the answer HONESTLY based on these strict criteria:
-- 1-3: Very poor. Irrelevant, too short, or completely wrong.
+
+- 0: Completely meaningless answer, random characters, keyboard smashing, unrelated text, or no attempt to answer the question.
+- 1-3: Very poor. Extremely weak answer, mostly irrelevant, or shows little understanding.
 - 4-5: Below average. Vague, missing key points, weak structure.
 - 6-7: Average. Some good points but lacks depth or examples.
 - 8-9: Good. Clear, structured, relevant with good examples.
 - 10: Excellent. Perfect structure, specific examples, complete answer.
 
 IMPORTANT RULES:
+- If the answer contains random text such as "asdfgh", "knhdbkankjvnkj", "123456", or meaningless words, give 0/10.
+- If the answer does not address the question at all, give 0/10.
 - Do NOT give 8 by default. Be honest.
 - A one-line answer should NEVER score above 5.
 - A vague answer without examples should NEVER score above 6.
@@ -172,7 +176,7 @@ Use honest, constructive, beginner-friendly language.
 # ── Inputs ─────────────────────────────────────────────────────────────────
 role = st.text_input(
     "Enter Job Role",
-    placeholder="e.g. Data Analyst, Software Engineer",
+    placeholder="e.g. Data Analyst,Cloud Engineer ",
     value=st.session_state.current_role,
 )
 
